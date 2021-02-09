@@ -1,0 +1,40 @@
+<html>
+
+<!--Importation du fichier CSS-->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Son des différents Bouttons -->
+<audio id="sonBouttonVert" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+<audio id="sonBouttonRouge" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+<audio id="sonBouttonJaune" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+<audio id="sonBouttonBleu" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+<audio id="sonBouttonFaux" src="http://www.freesound.org/data/previews/331/331912_3248244-lq.mp3"></audio>
+
+<body>
+	<!-- Ajout du titre -->
+	<div id="titre" class="titre_simon">SIMON GAME</div>
+	<br><br>
+
+	<!--Ajout des 3 bouttons principaux-->
+	<div id="list_button">
+		<button class="button" id="start"> Start</button>
+		<button class="button" id="restart"> Restart</button>
+		<button class="button" id="infos"> Règles</button>
+	</div>
+	<br>
+		<div id="Compteur">
+			Tour :
+		</div>
+	<br>
+	<!-- Création du cercle + des quattres touches-->
+	<div id="grand_cercle">
+		<div id="topLeftRouge"></div>
+		<div id="topRightVert"></div>
+		<div id="bottomRightJaune"></div>
+		<div id="bottomLeftBleu"></div>
+    </div>
+
+    <!--Importation du fichier JS-->
+	<script src="index.js"></script>
+</body>
+</html>
